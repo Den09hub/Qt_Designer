@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-4</y>
+      <width>801</width>
+      <height>561</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivos">
+    <property name="title">
+     <string>Arquivos</string>
+    </property>
+    <widget class="QMenu" name="menuNovo">
+     <property name="title">
+      <string>Novo</string>
+     </property>
+     <addaction name="actionNovo_Arquivo"/>
+     <addaction name="actionNovo_Modelo"/>
+    </widget>
+    <addaction name="menuNovo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFormatar">
+    <property name="title">
+     <string>Formatar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuExibir">
+    <property name="title">
+     <string>Exibir</string>
+    </property>
+    <widget class="QMenu" name="menuZoom">
+     <property name="title">
+      <string>Zoom</string>
+     </property>
+     <addaction name="actionAmpliar"/>
+     <addaction name="actionReduzir"/>
+     <addaction name="actionRestaurar_Zoom_Padr_o"/>
+    </widget>
+    <addaction name="menuZoom"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+   </widget>
+   <addaction name="menuArquivos"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuFormatar"/>
+   <addaction name="menuExibir"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionNovo_Arquivo">
+   <property name="text">
+    <string>Novo Arquivo</string>
+   </property>
+  </action>
+  <action name="actionNovo_Modelo">
+   <property name="text">
+    <string>Novo Modelo</string>
+   </property>
+  </action>
+  <action name="actionAmpliar">
+   <property name="text">
+    <string>Ampliar</string>
+   </property>
+  </action>
+  <action name="actionReduzir">
+   <property name="text">
+    <string>Reduzir</string>
+   </property>
+  </action>
+  <action name="actionRestaurar_Zoom_Padr_o">
+   <property name="text">
+    <string>Restaurar Zoom Padrão</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
